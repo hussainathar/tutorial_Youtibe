@@ -31,4 +31,12 @@ comment =Comment.create(
 	post: post,
 	visitor: visitor)
 
+message = Message.create(
+	content: Faker::Lorem.paragraph,
+	status: [true,false].sample,
+	visitor: visitor)
+notifiable = [visitor, comment].sample
+notification= Notification.create(
+	notifiable_id: notifiable.id,
+	notifiable_type: notifiable.class.name)
 end

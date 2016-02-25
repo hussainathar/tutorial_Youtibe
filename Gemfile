@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
  gem 'bcrypt', '~> 3.1.7'
 
+gem 'mime-types', '~> 2.99'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -47,5 +48,7 @@ group :development do
   gem 'faker'
   #paginator 
   gem 'kaminari', '~> 0.16.3'
+
+
 end
 
