@@ -8,5 +8,7 @@ class PostsController < ApplicationController
   end
 
   def show
+  	@post= Post.find(params[:id])
+    @visitor_comment= Visitor.new(comments: [Comment.new])
   end
 end

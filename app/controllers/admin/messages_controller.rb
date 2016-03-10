@@ -15,6 +15,7 @@ class Admin::MessagesController < Admin::ApplicationController
   end
 
   def update
+    byebug
   	@message=Message.find(params[:id])
   	@message.update(status: params[:status])
 	redirect_to :back, notice: 'Successfully updated message'  	
